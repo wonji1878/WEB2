@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>인적사항</title>
+    <h1>-----------------------------------자신의 인적사항을 입력해주세요.------------------------------</h1>
+  </head>
+  <body>
+    <p><h2>이름 <input type="text" name="name" value="이름을 입력하세요."></h2></p>
+    <p><h2>이메일 주소 <input type="text" name="email" value="이메일 주소를 입력하세요.">@<select name="mail">
+      <option value="gmail">gmail.com</option>
+      <option value="naver">naver.com</option>
+      <option value="hanmail">hanmail.net</option>
+      <option value="hotmail">hotmail.com</option>
+      <option value="yahoo">yahoo.co.kr</option>
+    </select></h2></p>
+    <p><h2>생년월일 <input type="text" name="birthday" value="예시) 20041129"></h2></p>
+    <p><h2>성별&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;남자<input type="radio" name="gender" value="male">&nbsp;&nbsp;여자<input type="radio" name="gender" value="female"><h2></p>
+    <h2>휴대폰 번호</h2>
+    <h2><select name="통신사">
+      <option value="SKT">SKT</option>
+      <option value="KT">KT</option>
+      <option value="LG U+">LG U+</option>
+    </select><input type="text" name="phoneNumber" value="예시) 01012345678"><input type="button" onclick='cer1()' name="cer" value="인증"></h2>
+    <h2>인증하기</h2>
+    <input type="text" name="cer2" value="인증번호를 입력해주세요."><input type="button" onclick="inz()" name="yes" value="인증">
+    <script type="text/javascript">
+      const cer = Math.floor(Math.random()*100000)+10000;
+      function cer1() {
+          alert("인증번호는 "+cer+"입니다.");
+      }
+      function inz() {
+        if (true) {
+          alert("인증되었습니다.");
+        }
+      }
+    </script>
+
+  </body>
+</html>
